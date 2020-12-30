@@ -9,10 +9,12 @@ import '@grapecity/spread-sheets-designer-resources-en';
 })
 
 export class AppComponent {
-  props = {
-    title: 'Tabela customizável',
-    styleInfo: "width: 800px; height: 600px;",
-    config: null
+  spreadConfig = {
+    props: {
+      title: 'Tabela customizável',
+      styleInfo: "width: 100%; height: calc(100vh - 3px);",
+      config: null
+    }
   };
 
   constructor() {
